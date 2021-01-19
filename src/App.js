@@ -12,7 +12,6 @@ import 'semantic-ui-css/semantic.min.css'
 function App() {
   return (
     <Router>
-      <div>
         <Navigation />
         <Switch>
           <Route exact path="/" component={About} />
@@ -22,7 +21,6 @@ function App() {
           <Route path="*" component={About} />
         </Switch>
         <Foot />
-      </div>
     </Router>
   );
 }
