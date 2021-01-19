@@ -69,7 +69,7 @@ function Work() {
           '../../assets/images/logos/handlebars-logo.png'
         ]}
         creativeCopy="I had a great time working on the design for this project! I got the chance to draw a monsterous face, oozing liquids, and some beef patties! haha I went for a 'metal / Thrasher' sort of vibe."
-        demoLink={<a href='https://powerful-cliffs-00589.herokuapp.com/' target='blank'>BURGER DESTTOYER DEMO</a>}
+        demoLink={<a href='https://powerful-cliffs-00589.herokuapp.com/' target='blank'>BURGER DESTROYER DEMO</a>}
         demoView={<Image centered size='large' src='../../assets/images/bdview.png' />}
       />
 
@@ -125,7 +125,7 @@ function Work() {
           '../../assets/images/logos/momentJS.jpg',
           '../../assets/images/logos/faLogo.png'
         ]}
-        creativeCopy="This is another responsive design that was built to be simple and funtional. Upon your first visit, you are met with a modal that introduces you to the application and gives you a rundown of all the icons and how the software works. I really liked the color palette and the overall layout."
+        creativeCopy="This is another responsive design that was built to be simple and functional. Upon your first visit, you are met with a modal that introduces you to the application and gives you a rundown of all the icons and how the software works. I really liked the color palette and the overall layout."
         demoLink={<a href='https://bertodemus.github.io/Work-Day-Scheduler/' target='blank'>ORCHESTRATE DEMO</a>}
         demoView={<Image centered size='large' src='../../assets/images/oview.png' />}
       />

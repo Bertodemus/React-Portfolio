@@ -14,7 +14,7 @@ function About() {
           Merging My Left Brain With My Right Brain
         </Header>
         <p>
-          Greetings! My name is Roberto Rubet, but I go by Berto! I am a Latino artist and a Full Stack Web Developmer. With 18 years of experience as a designer/illustrator and my ability to absorb complex technical data, I am a developer capable of unifying design and technology, creation and implementation, analysis and realization.
+          Greetings! My name is Roberto Rubet, but I go by Berto! I am a Latino artist and a Full Stack Web Developer. With 18 years of experience as a designer/illustrator and my ability to absorb complex technical data, I am a developer capable of unifying design and technology, creation and implementation, analysis and realization.
         </p>
         <Divider
           as='h4'
