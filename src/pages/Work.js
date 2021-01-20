@@ -53,6 +53,40 @@ function Work() {
       />
 
       <Project
+        name="PERSPEKTIV"
+        logicCopy="This project was an interactive mural search of Richmond, Va. (RVA). It exposed us to some great technologies, including a different CSS framework: Materialze CSS. On the backend, Mark and Javonte knocked it out of the park. Using multiple APIs and data sources, they pulled together all the data needed to get the map view operational."
+        repoLink={<a href='https://github.com/markdcross/perspektiv' target='blank'>PERSPEKTIV REPO</a>}
+        tech={[
+          '../../assets/images/logos/html5Logo.png',
+          '../../assets/images/logos/cssLogo.png',
+          '../../assets/images/logos/JavaScript-logo.png',
+          '../../assets/images/logos/materializeLogo.png',
+          '../../assets/images/logos/jqueryLogo.png',
+          '../../assets/images/logos/ajax-logo.png',
+          '../../assets/images/logos/mapboxLogo.png',
+          '../../assets/images/logos/leafletLogo.png',
+          '../../assets/images/logos/googleapiLogo.png'
+        ]}
+        creativeCopy="Designed to be responsive, functional, and attractive, we had a wonderful time collaborating and coming together on this design. As part of the design team, Danny and I worked numerous hours getting the UI/UX just right."
+        demoLink={<a href='https://markdcross.github.io/perspektiv/' target='blank'>PERSPEKTIV DEMO</a>}
+        demoView={<Image centered size='large' src='../../assets/images/pview.png' />}
+      />
+
+      <Project
+        name="BUDGET BUDDY"
+        logicCopy="This project is a small budget tracker. It is designed to be a PWA (progressive web application). I had a great time exploring that functionality and getting the site to function while off-line. If there is no connection, it will track any user input and then update the chart once it detects a connection."
+        repoLink={<a href='https://github.com/Bertodemus/BudgetBuddy/' target='blank'>BUDGET BUDDY REPO</a>}
+        tech={[
+          '../../assets/images/logos/html5Logo.png',
+          '../../assets/images/logos/cssLogo.png',
+          '../../assets/images/logos/JavaScript-logo.png'
+        ]}
+        creativeCopy="This design was simple and moreso focused on functioning as a PWA. Though, I did have a blast designing and creating the 'Budget Buddy. I also updated the formatting and color scheme."
+        demoLink={<a href='https://warm-taiga-26819.herokuapp.com/' target='blank'>BUDGET BUDDY DEMO</a>}
+        demoView={<Image centered size='large' src='../../assets/images/bbview.png' />}
+      />
+
+      <Project
         name="BURGER DESTROYER"
         logicCopy="Burger Destroyer was a fun and perplexing project to work on. It utilized the MVC software design pattern. It forced me to really consider how my code was constructed. I got the opportunity to use new technologies such as Handlebars, ORM, and JawsDB."
         repoLink={<a href='https://github.com/Bertodemus/BurgerDestroyer' target='blank'>BURGER DESTROYER REPO</a>}
@@ -73,25 +107,6 @@ function Work() {
         demoView={<Image centered size='large' src='../../assets/images/bdview.png' />}
       />
 
-      <Project
-        name="PERSPEKTIV"
-        logicCopy="This project was an interactive mural search of Richmond, Va. (RVA). It exposed us to some great technologies, including a different CSS framework: Materialze CSS. On the backend, Mark and Javonte knocked it out of the park. Using multiple APIs and data sources, they pulled together all the data needed to get the map view operational."
-        repoLink={<a href='https://github.com/markdcross/perspektiv' target='blank'>PERSPEKTIV REPO</a>}
-        tech={[
-          '../../assets/images/logos/html5Logo.png',
-          '../../assets/images/logos/cssLogo.png',
-          '../../assets/images/logos/JavaScript-logo.png',
-          '../../assets/images/logos/materializeLogo.png',
-          '../../assets/images/logos/jqueryLogo.png',
-          '../../assets/images/logos/ajax-logo.png',
-          '../../assets/images/logos/mapboxLogo.png',
-          '../../assets/images/logos/leafletLogo.png',
-          '../../assets/images/logos/googleapiLogo.png'
-        ]}
-        creativeCopy="Designed to be responsive, functional, and attractive, we had a wonderful time collaborating and coming together on this design. As part of the design team, Danny and I worked numerous hours getting the UI/UX just right."
-        demoLink={<a href='https://markdcross.github.io/perspektiv/' target='blank'>PERSPEKTIV DEMO</a>}
-        demoView={<Image centered size='large' src='../../assets/images/pview.png' />}
-      />
 
       <Project
         name="METEOR"
