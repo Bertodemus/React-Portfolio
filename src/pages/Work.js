@@ -52,7 +52,7 @@ function Work() {
         demoView={<Image centered size='large' src='../../assets/images/taview.png' />}
       />
 
-<Project
+      <Project
         name="BURGER DESTROYER"
         logicCopy="Burger Destroyer was a fun and perplexing project to work on. It utilized the MVC software design pattern. It forced me to really consider how my code was constructed. I got the opportunity to use new technologies such as Handlebars, ORM, and JawsDB."
         repoLink={<a href='https://github.com/Bertodemus/BurgerDestroyer' target='blank'>BURGER DESTROYER REPO</a>}
@@ -73,7 +73,7 @@ function Work() {
         demoView={<Image centered size='large' src='../../assets/images/bdview.png' />}
       />
 
-<Project
+      <Project
         name="PERSPEKTIV"
         logicCopy="This project was an interactive mural search of Richmond, Va. (RVA). It exposed us to some great technologies, including a different CSS framework: Materialze CSS. On the backend, Mark and Javonte knocked it out of the park. Using multiple APIs and data sources, they pulled together all the data needed to get the map view operational."
         repoLink={<a href='https://github.com/markdcross/perspektiv' target='blank'>PERSPEKTIV REPO</a>}
@@ -93,7 +93,7 @@ function Work() {
         demoView={<Image centered size='large' src='../../assets/images/pview.png' />}
       />
 
-<Project
+      <Project
         name="METEOR"
         logicCopy="Meteor is a weather dashboard that allows a user to enter in a city name and receive updated weather conditions for that city. I really enjoyed digging into the open weather map API. Aside from wrestling with the API calls, making the bar graphs functional and tracking the local storage was an adventure! Checkout the Readme file in the repository for more detailed information."
         repoLink={<a href='https://github.com/Bertodemus/Meteor-Weather-Dashboard' target='blank'>METEOR REPO</a>}
@@ -112,7 +112,7 @@ function Work() {
         demoView={<Image centered size='large' src='../../assets/images/mview.png' />}
       />
 
-<Project
+      <Project
         name="ORCHESTRATE"
         logicCopy="This is a simple hour-by-hour work day scheduler. This application runs in the browser and features dynamically updated HTML and CSS powered by jQuery. This project presented itself with some interesting opportunties regarding local storage, detecting time of day, and looping."
         repoLink={<a href='https://github.com/Bertodemus/Work-Day-Scheduler' target='blank'>ORCHESTRATE REPO</a>}

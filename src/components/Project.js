@@ -10,11 +10,12 @@ import {
   Popup,
 } from 'semantic-ui-react'
 
-
 function Project(props) {
     return (
         <>
-        <Grid.Row>
+        <Grid.Row  style={{
+                    paddingBottom: '0em'
+                }}>
             <Grid.Column width={16}>
                 <Header
                 as='h3'
@@ -22,12 +23,12 @@ function Project(props) {
                 textAlign='center'
                 style={{
                     fontWeight: 'normal',
-                    background: '#f0ad4e'
+                    background: '#f0ad4e',
                 }}
                 />
             </Grid.Column>
         </Grid.Row>
-    <Segment style={{ margin: '0em 0em 1em 0em' }}>
+    <Segment basic style={{ margin: '0em 0em 1em 0em' }}>
     <Grid centered columns={2}>
         <Grid.Row centered>
             <Grid.Column width={7} textAlign='left' style={{ padding: '0em 2em 0em 0em' }}>
@@ -38,7 +39,7 @@ function Project(props) {
                     {props.repoLink}
                 <hr></hr>
                 <Grid.Row>
-                    <Grid.Column>
+                    <Grid.Column style={{ padding: '0em 0em 0em 1em' }}>
                         {props.tech.map((tech) =>
                             <Image inline size='mini' src={tech}/>
                         )}
@@ -64,11 +65,9 @@ function Project(props) {
             <AnchorLink href="#top" >
             <Popup content='Back to Top' position='top center' size='mini' inverted trigger={<Icon size='large' color='red' name='arrow alternate circle up outline' style={{ margin: '-0.5em 0 0 0' }} />}/>
             </AnchorLink>   
-            {/* <a href="#top"><Icon color='red' name='arrow alternate circle up outline' style={{ margin: '0 0 0 0' }} /></a> */}
         </Divider>
     </Segment>
     </>
-
     );
 }
 
