@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+![logo](./readme/noggin.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An overhaul of my portfolio featuring my current work. The work page is divided into the left side and the right side. The division represents both halves of the brain. Left = logic & Right = Creativity
 
-## Available Scripts
+## Link
+[Berto Portfolio](https://eloquent-einstein-00bf1b.netlify.app/)
 
-In the project directory, you can run:
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Description](#description)
+* [Usage](#usage)
+* [Screenshots](#screenshots)
+* [Questions](#questions)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+* Portfolio was redesigned to leverage [ReactJS](https://reactjs.org/)
+* [React-Bootstrap](https://react-bootstrap.github.io/) and [React Semantic UI](https://react.semantic-ui.com/) were utilized to create the layout
+* I created the illustratation of myself - more examples of my artwork `BERTO` (www.robertorubet.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* When the application is loaded for the first time, the user is met with the `About` page
+* There are three areas in the navigation:
+    * About
+        * Contains a bit of information on the designer
+        * Includes an illustrated self-portrait
+    * Work
+        * A list of six projects
+        * Each project has two sides: The logic and The creativity
+          * I kept everything related to logic, code, and logistics, on the left side
+          * I kept everything related to design and visuals, on the right side
+    * Contact
+        * Contains my current contact information
+        * The left side has links to my updated Github profile, LinkedIn profile, email, resume, and phone number
+        * The right side has links to my Instagram and Personal art site
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Screenshot of the page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![example of the page in use](./readme/view1.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Questions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feel free to get in touch with me if you have any questions or concerns.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Link to my GitHub Profile: [Bertodemus](https://github.com/bertodemus)
 
-### Code Splitting
+Email me at: [roberto@robertorubet.com](roberto@robertorubet.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
