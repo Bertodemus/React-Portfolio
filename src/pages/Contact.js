@@ -81,11 +81,11 @@ function Contact() {
                 </Card>
 
                 <Card fluid>
-                  <a href="https://bertodemus.github.io/React-Portfolio/assets/files/RRResume.pdf"><Image src='../../assets/images/logos/resume.png' /></a>
+                  <a href="https://github.com/Bertodemus/React-Portfolio/raw/main/public/assets/files/RRResume.pdf"><Image src='../../assets/images/logos/resume.png' /></a>
                   <Card.Content>
                   <Card.Header>Resume</Card.Header>
                     <Card.Description>
-                      <a href="https://bertodemus.github.io/React-Portfolio/assets/files/RRResume.pdf">Download</a>
+                      <a href="https://github.com/Bertodemus/React-Portfolio/raw/main/public/assets/files/RRResume.pdf">Download</a>
                     </Card.Description>
                   </Card.Content>
                 </Card>
