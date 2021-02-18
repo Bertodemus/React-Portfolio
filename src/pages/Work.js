@@ -37,7 +37,7 @@ function Work() {
 					]}
 					creativeCopy='Danny and I had to really put our heads together on the front-end. We wanted to increase user engagement, add a "game" element to visiting the murals, and hit most of our "wants" from Version 1.'
 					demoLink={
-						<a href='https://perspektivrva.com/' target='blank'>
+						<a href='http://bit.ly/perspektiv-rva' target='blank'>
 							PERSPEKTIV V2 DEMO
 						</a>
 					}
