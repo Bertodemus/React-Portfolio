@@ -32,7 +32,7 @@ function Work() {
 						"../../assets/images/logos/reactbootstrap-logo.png",
 						"../../assets/images/logos/semanticuireact-logo.png",
 						"../../assets/images/logos/express-logo.png",
-            "../../assets/images/logos/mongodb-logo.jpg",
+            					"../../assets/images/logos/mongodb-logo.jpg",
 						"../../assets/images/logos/mapboxLogo.png",
 					]}
 					creativeCopy='Danny and I had to really put our heads together on the front-end. We wanted to increase user engagement, add a "game" element to visiting the murals, and hit most of our "wants" from Version 1.'
