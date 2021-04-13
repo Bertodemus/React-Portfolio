@@ -35,28 +35,17 @@ function Contact() {
 						>
 							<Card.Group>
 								<Card fluid>
-									<a href='mailto:roberto@robertorubet.com' target='blank'>
-										<Image src='../../assets/images/logos/email.png' />
+									<a href='https://github.com/Bertodemus/React-Portfolio/raw/main/public/assets/files/RRResume.pdf'>
+										<Image src='../../assets/images/logos/resume.png' />
 									</a>
 									<Card.Content>
-										<Card.Header>E-Mail</Card.Header>
+										<Card.Header>Resume</Card.Header>
 										<Card.Description>
-											<a href='mailto:roberto@robertorubet.com' target='blank'>
-												roberto@robertorubet.com
-											</a>
-										</Card.Description>
-									</Card.Content>
-								</Card>
-
-								<Card fluid>
-									<a href='https://github.com/Bertodemus' target='blank'>
-										<Image src='../../assets/images/logos/github.png' />
-									</a>
-									<Card.Content>
-										<Card.Header>GitHub</Card.Header>
-										<Card.Description>
-											<a href='https://github.com/Bertodemus' target='blank'>
-												Bertodemus
+											<a
+												href='https://docs.google.com/document/d/1quRV0Rgsaj-3IHFhuCKTk_3FuiGqNiVtRjyzLUrkWTo/edit?usp=sharing'
+												target='blank'
+											>
+												View Resume
 											</a>
 										</Card.Description>
 									</Card.Content>
@@ -83,14 +72,28 @@ function Contact() {
 								</Card>
 
 								<Card fluid>
-									<a href='https://github.com/Bertodemus/React-Portfolio/raw/main/public/assets/files/RRResume.pdf'>
-										<Image src='../../assets/images/logos/resume.png' />
+									<a href='https://github.com/Bertodemus' target='blank'>
+										<Image src='../../assets/images/logos/github.png' />
 									</a>
 									<Card.Content>
-										<Card.Header>Resume</Card.Header>
+										<Card.Header>GitHub</Card.Header>
 										<Card.Description>
-											<a href='https://docs.google.com/document/d/1quRV0Rgsaj-3IHFhuCKTk_3FuiGqNiVtRjyzLUrkWTo/edit?usp=sharing' target='blank'>
-												View Resume
+											<a href='https://github.com/Bertodemus' target='blank'>
+												Bertodemus
+											</a>
+										</Card.Description>
+									</Card.Content>
+								</Card>
+
+								<Card fluid>
+									<a href='mailto:roberto@robertorubet.com' target='blank'>
+										<Image src='../../assets/images/logos/email.png' />
+									</a>
+									<Card.Content>
+										<Card.Header>E-Mail</Card.Header>
+										<Card.Description>
+											<a href='mailto:roberto@robertorubet.com' target='blank'>
+												roberto@robertorubet.com
 											</a>
 										</Card.Description>
 									</Card.Content>

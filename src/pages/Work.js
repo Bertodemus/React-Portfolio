@@ -1,23 +1,11 @@
 import React from "react";
-// import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Card, Grid, Header, Image, Divider } from "semantic-ui-react";
+import { Card, Grid, Header, Divider } from "semantic-ui-react";
 import Project from "../components/Project";
 
 function Work() {
 	return (
 		<div>
 			<Grid centered style={{ padding: "1em 0em 0em 0em" }}>
-				{/* <Grid.Row columns={16}>
-					<Grid.Column width={7} textAlign='center'>
-						<Header as='h2' content='LOGIC' />
-					</Grid.Column>
-					<Grid.Column width={2} textAlign='center'>
-						<Header as='h2' content='+' />
-					</Grid.Column>
-					<Grid.Column width={7} textAlign='center'>
-						<Header as='h2' content='CREATIVITY' />
-					</Grid.Column>
-				</Grid.Row> */}
 				<Grid.Row
 					style={{
 						padding: "0 0 0 0",
@@ -27,10 +15,10 @@ function Work() {
 						<Divider horizontal>
 							<Header 
 								as='h3'
-								content="Where my logic and creativity tend to arm wrestle."
+								content="Arm wrestling logic and creativity"
 								textAlign='center'
 								style={{
-									fontWeight: "normal",
+									fontWeight: "normal"
 								}}
 							/>
 						</Divider>

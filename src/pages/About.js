@@ -9,11 +9,12 @@ function About() {
 					Merging My Left Brain With My Right Brain
 				</Header>
 				<p>
-					My name is Roberto Rubet, but I go by Berto! I am a creative, turned developer! I am looking to unify design and
-					technology, creation and implementation, analysis and realization.
-					With my experience as a designer/illustrator, my keen ability to quickly
-					absorb complex technical data, and my love for ideation and the iterative process, I believe that I can do
-					just that!
+					My name is Roberto Rubet, but I go by Berto! I am a creative, turned
+					developer! I am looking to unify design and technology, creation and
+					implementation, analysis and realization. With my experience as a
+					designer/illustrator, my keen ability to quickly absorb complex
+					technical data, and my love for ideation and the iterative process, I
+					believe that I can do just that!
 				</p>
 				<Divider
 					as='h4'
@@ -21,7 +22,9 @@ function About() {
 					horizontal
 					style={{ margin: "3em 0em", textTransform: "uppercase" }}
 				>
-					<a href='#'>Kudos - Praises - Comments</a>
+					<a href='#' style={{ color: "#d84bbf" }}>
+						Kudos - Praises - Comments
+					</a>
 				</Divider>
 				<Header as='h3'>"Are you eating enough?""</Header>
 				<p>- A Concerned Mother</p>

@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import {
 	Divider,
 	Grid,
+	Header,
 	Icon,
 	Image,
 	Segment,
@@ -23,20 +24,21 @@ function Project(props) {
 				</Card.Content>
 				<Card.Content>
 					<Segment basic style={{ margin: "0em 0em 1em 0em" }}>
-						<Grid centered columns={1}>
-							<Grid.Row centered only='mobile'>
-								<Grid.Column width={16} textAlign='left'>
+						<Grid centered columns={2}>
+							<Grid.Row centered className='mobile only'>
+								<Grid.Column
+									width={7}
+									textAlign='left'
+									style={{ padding: "0em 2em 0em 0em" }}
+								>
 									<p>{props.logicCopy}</p>
-									<br></br>
-									<p>
-										{props.repoLink} - This is a link to the repository and just
-										below is a list of some of the tech we used.
-									</p>
+									<hr></hr>
+									{props.repoLink}
+									<hr></hr>
 									<Grid.Row>
 										<Grid.Column style={{ padding: "0em 0em 0em 1em" }}>
 											{props.tech.map((tech) => (
 												<Image
-													key={tech}
 													inline
 													rounded
 													size='mini'
@@ -46,45 +48,30 @@ function Project(props) {
 											))}
 										</Grid.Column>
 									</Grid.Row>
-									<hr></hr>
 								</Grid.Column>
-							</Grid.Row>
-							<Grid.Row centered only='mobile'>
-								<Grid.Column width={16} textAlign='left'>
+								<Grid.Column
+									width={7}
+									textAlign='left'
+									style={{ padding: "0em 0em 0em 2em" }}
+								>
 									<p>{props.creativeCopy}</p>
-									<p>{props.demoLink} - This is a link to the live demo.</p>
-									<br></br>
+									<hr></hr>
+									{props.demoLink}
+									<hr></hr>
 									<Grid.Row>
 										<Grid.Column style={{ padding: "0em 1em 0em 1em" }}>
-											<Image rounded size='large' src={props.demoView} />
+											<Image
+												rounded
+												size='large'
+												spaced='right'
+												src={props.demoViewM}
+											/>
 										</Grid.Column>
 									</Grid.Row>
 								</Grid.Column>
 							</Grid.Row>
-							<Grid.Row centered only='mobile' style={{ padding: "0 0 0 0" }}>
-								<Grid.Column width={16}>
-									<Divider horizontal>
-										<AnchorLink href='#top'>
-											<Popup
-												content='Back to Top'
-												position='top center'
-												size='mini'
-												inverted
-												trigger={
-													<Icon
-														size='large'
-														color='teal'
-														name='arrow alternate circle up outline'
-														style={{ padding: "0 0 0 5px" }}
-													/>
-												}
-											/>
-										</AnchorLink>
-									</Divider>
-								</Grid.Column>
-							</Grid.Row>
 
-							<Grid.Row centered only='tablet computer'>
+							<Grid.Row centered className='tablet computer only '>
 								<Grid.Column
 									width={7}
 									textAlign='left'
@@ -92,16 +79,12 @@ function Project(props) {
 								>
 									<p>{props.logicCopy}</p>
 									<hr></hr>
-									<p>
-										{props.repoLink} - This is a link to the repository and just
-										below is a list of some of the tech we used.
-									</p>
+									{props.repoLink}
 									<hr></hr>
 									<Grid.Row>
 										<Grid.Column style={{ padding: "0em 0em 0em 1em" }}>
 											{props.tech.map((tech) => (
 												<Image
-													key={tech}
 													inline
 													rounded
 													size='tiny'
@@ -112,24 +95,6 @@ function Project(props) {
 										</Grid.Column>
 									</Grid.Row>
 								</Grid.Column>
-								<Divider vertical>
-									<AnchorLink href='#top'>
-										<Popup
-											content='Back to Top'
-											position='top center'
-											size='mini'
-											inverted
-											trigger={
-												<Icon
-													size='large'
-													color='teal'
-													name='arrow alternate circle up outline'
-													style={{ margin: "-10px 0 0 3px" }}
-												/>
-											}
-										/>
-									</AnchorLink>
-								</Divider>
 								<Grid.Column
 									width={7}
 									textAlign='left'
@@ -137,16 +102,39 @@ function Project(props) {
 								>
 									<p>{props.creativeCopy}</p>
 									<hr></hr>
-									<p>{props.demoLink} - This is a link to the live demo.</p>
+									{props.demoLink}
 									<hr></hr>
 									<Grid.Row>
 										<Grid.Column style={{ padding: "0em 1em 0em 1em" }}>
-											<Image rounded size='large' src={props.demoViewM} />
+											<Image
+												rounded
+												size='large'
+												spaced='right'
+												src={props.demoView}
+											/>
 										</Grid.Column>
 									</Grid.Row>
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
+						<Divider vertical>
+							<AnchorLink href='#top'>
+								<Popup
+									content='Back to Top'
+									position='top center'
+									size='mini'
+									inverted
+									trigger={
+										<Icon
+											size='large'
+											color='red'
+											name='arrow alternate circle up outline'
+											style={{ margin: "-0.5em 0 0 0" }}
+										/>
+									}
+								/>
+							</AnchorLink>
+						</Divider>
 					</Segment>
 				</Card.Content>
 			</Card>

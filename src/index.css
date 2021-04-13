@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ui.grid>.column+.divider, .ui.grid>.row>.column+.divider {
+  left: auto !important;
+  margin-left: 2em;
+}
