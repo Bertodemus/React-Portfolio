@@ -16,3 +16,11 @@ code {
   left: auto !important;
   margin-left: 2em;
 }
+
+.ui.card>.content, .ui.cards>.card>.content {
+  padding: .5em 1em !important;
+}
+
+.ui.cards>.card {
+  margin: .7em .5em !important;
+}

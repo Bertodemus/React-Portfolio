@@ -5,7 +5,7 @@ import Project from "../components/Project";
 function Work() {
 	return (
 		<div>
-			<Grid centered style={{ padding: "1em 0em 0em 0em" }}>
+			<Grid centered style={{ padding: "1em 2em 1em 2em" }}>
 				<Grid.Row
 					style={{
 						padding: "0 0 0 0",
@@ -252,6 +252,7 @@ function Work() {
 						demoViewM={'../../assets/images/oviewSQ.png'}
 					/>
 				</Card.Group>
+				<br></br>
 			</Grid>
 		</div>
 	);

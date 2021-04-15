@@ -13,7 +13,7 @@ import {
 function Project(props) {
 	return (
 		<>
-			<Card fluid style={{ margin: "1em 2em 0em 2em" }}>
+			<Card raised fluid style={{ margin: "1em 2em 0em 2em" }}>
 				<Card.Content
 					style={{
 						background: "#dddddd",
