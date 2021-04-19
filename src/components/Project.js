@@ -1,154 +1,180 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Grid, Image, Segment, Card, Button } from "semantic-ui-react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	Divider,
-	Grid,
-	Icon,
-	Image,
-	Segment,
-	Popup,
-	Card,
-} from "semantic-ui-react";
+	faBrain,
+	faCode,
+	faPencilRuler,
+	faToolbox,
+	faUsers,
+	faUser,
+	faHourglassHalf,
+	faChevronCircleUp,
+	faChevronCircleRight,
+	faChevronCircleLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+	faEdit,
+	faEye,
+	faObjectGroup,
+} from "@fortawesome/free-regular-svg-icons";
+import Carousel from "react-bootstrap/Carousel";
 
 function Project(props) {
+	const skillz = {
+		idea: {
+			font: faBrain,
+			label: "Ideation",
+		},
+		visual: {
+			font: faEye,
+			label: "Visual Design",
+		},
+		group: {
+			font: faUsers,
+			label: "Collaboration",
+		},
+		iterate: {
+			font: faEdit,
+			label: "Iterative Process",
+		},
+		wireframe: {
+			font: faObjectGroup,
+			label: "Wireframing",
+		},
+		graphics: {
+			font: faPencilRuler,
+			label: "Custom Graphics",
+		},
+		code: {
+			font: faCode,
+			label: "Coding",
+		},
+		frameworks: {
+			font: faToolbox,
+			label: "Frameworks",
+		},
+		solo: {
+			font: faUser,
+			label: "Solo Work",
+		},
+		time: {
+			font: faHourglassHalf,
+			label: "Time Management",
+		},
+	};
+
 	return (
 		<>
 			<Card raised fluid style={{ margin: "1em 2em 0em 2em" }}>
-				<Card.Content
-					style={{
-						background: "#dddddd",
-					}}
-				>
-					<Card.Header>{props.name}</Card.Header>
-				</Card.Content>
-				<Card.Content>
-					<Segment basic style={{ margin: "0em 0em 1em 0em" }}>
-						<Grid centered columns={1}>
-							<Grid.Row centered only='mobile'>
-								<Grid.Column width={16} textAlign='left'>
-									<p>{props.logicCopy}</p>
-									<br></br>
-									<p>
-										{props.repoLink} - This is a link to the repository and just
-										below is a list of some of the tech we used.
-									</p>
-									<Grid.Row>
-										<Grid.Column style={{ padding: "0em 0em 0em 1em" }}>
-											{props.tech.map((tech) => (
-												<Image
-													key={tech}
-													inline
-													rounded
-													size='mini'
-													spaced='right'
-													src={tech}
-												/>
-											))}
-										</Grid.Column>
-									</Grid.Row>
-									<hr></hr>
-								</Grid.Column>
-							</Grid.Row>
-							<Grid.Row centered only='mobile'>
-								<Grid.Column width={16} textAlign='left'>
-									<p>{props.creativeCopy}</p>
-									<p>{props.demoLink} - This is a link to the live demo.</p>
-									<br></br>
-									<Grid.Row>
-										<Grid.Column style={{ padding: "0em 1em 0em 1em" }}>
-											<Image rounded size='large' src={props.demoView} />
-										</Grid.Column>
-									</Grid.Row>
-								</Grid.Column>
-							</Grid.Row>
-							<Grid.Row centered only='mobile' style={{ padding: "0 0 0 0" }}>
-								<Grid.Column width={16}>
-									<Divider horizontal>
-										<AnchorLink href='#top'>
-											<Popup
-												content='Back to Top'
-												position='top center'
-												size='mini'
-												inverted
-												trigger={
-													<Icon
-														size='large'
-														color='teal'
-														name='arrow alternate circle up outline'
-														style={{ padding: "0 0 0 5px" }}
-													/>
-												}
+				<Segment basic style={{ margin: "0em 0em 1em 0em" }}>
+					<Grid centered columns={1}>
+						<Grid.Row>
+							<Grid.Column mobile={16} tablet={14} computer={7}>
+								<Segment basic>
+									<Carousel
+										interval={null}
+										nextIcon={
+											<FontAwesomeIcon
+												style={{ color: "35979b" }}
+												icon={faChevronCircleRight}
+												size='2x'
 											/>
-										</AnchorLink>
-									</Divider>
-								</Grid.Column>
-							</Grid.Row>
-
-							<Grid.Row centered only='tablet computer'>
-								<Grid.Column
-									width={7}
-									textAlign='left'
-									style={{ padding: "0em 2em 0em 0em" }}
-								>
-									<p>{props.logicCopy}</p>
+										}
+										prevIcon={
+											<FontAwesomeIcon
+												style={{ color: "35979b" }}
+												icon={faChevronCircleLeft}
+												size='2x'
+											/>
+										}
+									>
+										<Carousel.Item>
+											<img
+												className='d-block w-100'
+												src={props.demoView[0]}
+												alt='First slide'
+											/>
+											{/* <Carousel.Caption style={{color: "#fff"}}>
+												<h3>{props.demoViewL[0]}</h3>
+												<p>{props.demoViewC[0]}</p>
+											</Carousel.Caption> */}
+										</Carousel.Item>
+										<Carousel.Item>
+											<img
+												className='d-block w-100'
+												src={props.demoView[1]}
+												alt='Second slide'
+											/>
+											{/* <Carousel.Caption style={{color: "#fff"}}>
+												<h3>{props.demoViewL[1]}</h3>
+												<p>{props.demoViewC[1]}</p>
+											</Carousel.Caption> */}
+										</Carousel.Item>
+										<Carousel.Item>
+											<img
+												className='d-block w-100'
+												src={props.demoView[2]}
+												alt='Third slide'
+											/>
+											{/* <Carousel.Caption style={{color: "#fff"}}>
+												<h3>{props.demoViewL[2]}</h3>
+												<p>{props.demoViewC[2]}</p>
+											</Carousel.Caption> */}
+										</Carousel.Item>
+									</Carousel>
+								</Segment>
+							</Grid.Column>
+							<Grid.Column tablet={16} computer={9} textAlign='left'>
+								<Segment basic>
 									<hr></hr>
-									<p>
-										{props.repoLink} - This is a link to the repository and just
-										below is a list of some of the tech we used.
-									</p>
+									<p>{props.demoLink}</p>
+									<p>{props.info} {props.repoLink}</p>
 									<hr></hr>
-									<Grid.Row>
-										<Grid.Column style={{ padding: "0em 0em 0em 1em" }}>
-											{props.tech.map((tech) => (
-												<Image
-													key={tech}
-													inline
-													rounded
-													size='tiny'
-													spaced='right'
-													src={tech}
-												/>
-											))}
-										</Grid.Column>
-									</Grid.Row>
-								</Grid.Column>
-								<Divider vertical>
+									<p>Skills I Leveled Up:</p>
+									{props.skill.map((skill) => (
+										<Button rounded basic style={{ margin: "5px 5px 0 0" }}>
+											<FontAwesomeIcon icon={skillz[skill].font} size='2x' />
+											<p style={{ fontSize: "0.8em" }}>{skillz[skill].label}</p>
+										</Button>
+									))}
+									<hr></hr>
+									<p>Tech Tree:</p>
+									{props.tech.map((tech) => (
+										<Image
+											key={tech}
+											inline
+											rounded
+											size='tiny'
+											spaced='right'
+											src={tech}
+											style={{ margin: "5px 5px 0 0" }}
+										/>
+									))}
+									<hr></hr>
 									<AnchorLink href='#top'>
-										<Popup
-											content='Back to Top'
-											position='top center'
-											size='mini'
-											inverted
-											trigger={
-												<Icon
-													size='large'
-													color='teal'
-													name='arrow alternate circle up outline'
-													style={{ margin: "-10px 0 0 3px" }}
-												/>
-											}
+										<FontAwesomeIcon
+											style={{ color: "35979b", float: "right" }}
+											icon={faChevronCircleUp}
+											size='2x'
 										/>
 									</AnchorLink>
-								</Divider>
-								<Grid.Column
-									width={7}
-									textAlign='left'
-									style={{ padding: "0em 0em 0em 2em" }}
-								>
-									<p>{props.creativeCopy}</p>
-									<hr></hr>
-									<p>{props.demoLink} - This is a link to the live demo.</p>
-									<hr></hr>
-									<Grid.Row>
-										<Grid.Column style={{ padding: "0em 1em 0em 1em" }}>
-											<Image rounded size='large' src={props.demoViewM} />
-										</Grid.Column>
-									</Grid.Row>
-								</Grid.Column>
-							</Grid.Row>
-						</Grid>
-					</Segment>
-				</Card.Content>
+									<p
+										style={{
+											textAlign: "middle",
+											float: "right",
+											padding: "4px 5px 0 0",
+										}}
+									>
+										Back to Top
+									</p>
+								</Segment>
+							</Grid.Column>
+						</Grid.Row>
+					</Grid>
+				</Segment>
 			</Card>
 		</>
 	);

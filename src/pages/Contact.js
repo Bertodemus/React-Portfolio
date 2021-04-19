@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Grid, Header, Image, Segment, Card } from "semantic-ui-react";
+import { Divider, Grid, Image, Segment, Card } from "semantic-ui-react";
 
 function Contact() {
 	return (
@@ -7,20 +7,20 @@ function Contact() {
 			<Grid centered style={{ paddingTop: "1em" }}>
 				<Grid.Row
 					style={{
-						padding: "0 0 0 0",
+						padding: "1em 0 1em 0",
 					}}
 				>
 					<Grid.Column width={16}>
-						<Divider horizontal>
-							<Header
-								as='h3'
-								content="Let's get in touch, nerds!"
-								textAlign='center'
-								style={{
-									fontWeight: "normal",
-								}}
-							/>
-						</Divider>
+						<Divider
+							as='h4'
+							className='header'
+							horizontal
+							content="Let's get in touch, nerds!"
+							style={{
+								textTransform: "uppercase",
+								color: "#d84bbf",
+							}}
+						></Divider>
 					</Grid.Column>
 				</Grid.Row>
 			</Grid>
@@ -219,7 +219,7 @@ function Contact() {
 										</Card.Description>
 									</Card.Content>
 								</Card>
-								
+
 								<Card raised fluid>
 									<a
 										href='https://www.linkedin.com/in/roberto-rubet-3a76859?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM%2FYCJfmaSsq99IrQHrj1LA%3D%3D'
@@ -259,7 +259,6 @@ function Contact() {
 										</Card.Description>
 									</Card.Content>
 								</Card>
-
 							</Card.Group>
 						</Grid.Column>
 					</Grid.Row>

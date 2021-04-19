@@ -5,7 +5,6 @@ import {
 	Header,
 	Segment,
 	Button,
-	Icon,
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
@@ -61,7 +60,7 @@ function About() {
 				<Header as='h3'>"A most comedic human with a grand beard!""</Header>
 				<p>- Gandalf the Grey</p>
 				<Divider />
-				<Header as='h3'>"A hard worker, which I will carry through the gates of Valhalla. He shall ride eternal. Shiny, and chrome."</Header>
+				<Header as='h3'>"A hard worker, which I myself will carry through the gates of Valhalla. He shall code eternal. Shiny, and chrome."</Header>
 				<p>- Immortan Joe</p>
 				<Divider />
 			</Container>
